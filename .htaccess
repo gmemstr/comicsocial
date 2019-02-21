@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule \.(css|js|jpg|png|gif)$ -
+RewriteRule ^view/([0-9]+)/?$ view.php?id=$1 [NC]
+RewriteRule ^u/([A-Za-z0-9-]+)/?$ user.php?username=$1 [NC]
+RewriteRule ^u/?$ user.php [NC]
+RewriteRule ^([^\.]+)/$ $1.php [NC]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
