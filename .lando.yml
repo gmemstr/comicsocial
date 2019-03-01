@@ -1,0 +1,4 @@
+name: comicsocial
+recipe: lamp
+config:
+  webroot: .

@@ -1,6 +1,6 @@
 <?php
 $dbh = new PDO('mysql:host=localhost;dbname=comicly','root');
-$target_dir = "../../comic.ly/comimgs/";
+$target_dir = "../../comimgs/";
 $target_file = $target_dir . basename($_FILES["cfile"]["name"]);
 $uploadOk = 1;
 $fileType = pathinfo($target_file, PATHINFO_EXTENSION);

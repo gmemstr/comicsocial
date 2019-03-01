@@ -28,8 +28,8 @@
       <link rel="icon" href="fav.ico">
       <title>Comix Club | Comics gone social</title>
       <!-- Bootstrap core CSS -->
-      <link href="/comic.ly/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/comic.ly/css/custom.css" rel="stylesheet">
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/custom.css" rel="stylesheet">
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,7 +46,7 @@
                   <h4 class="modal-title" id="myModalLabel">Login</h4>
                </div>
                <div class="modal-body">
-                  <form action="/comic.ly/userauth/login.php" method="post">
+                  <form action="/userauth/login.php" method="post">
                      <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" name="u">
@@ -81,13 +81,13 @@
                      if($page == "index"){
                            echo 'class="active"';
                      }
-                     ?>><a href="/comic.ly/">Home</a></li>
+                     ?>><a href="/">Home</a></li>
                   <li><a href="#">Browse</a></li>
                   <li <?php
                      if($page == "about"){
                            echo 'class="active"';
                      }
-                     ?>><a href="/comic.ly/about/">About</a></li>
+                     ?>><a href="/about/">About</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
                   <?php
@@ -98,13 +98,13 @@
                      }else{
                            $user = User::current();
                            echo '<li><p class="navbar-text">Welcome '.$user->first_name.'</p></li>';
-                           echo '<li><p class="navbar-text"><a href="/comic.ly/dashboard/">Dashboard</a></p></li>';
+                           echo '<li><p class="navbar-text"><a href="/dashboard/">Dashboard</a></p></li>';
                            if($user->hasFeature("gold")){
 
                            }else{
-                           echo '<li><p class="navbar-text donate-text"><a href="/comic.ly/donate/">Donate</a></p></li>';
+                           echo '<li><p class="navbar-text donate-text"><a href="/donate/">Donate</a></p></li>';
                           }
-                           echo '<li><p class="navbar-text"><a href="/comic.ly/userauth/logout.php">Logout</a></p></li>';
+                           echo '<li><p class="navbar-text"><a href="/userauth/logout.php">Logout</a></p></li>';
                      }
                      }catch(Exception $e){
                            echo '<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>

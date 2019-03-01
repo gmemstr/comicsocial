@@ -13,7 +13,7 @@
 	$p = $_POST['p'];
 	
 	if(User::login($uname, $p)){
-		header('Location: /comic.ly/');
+		header('Location: /');
 	}else{
 		//echo $uname . " " . $p;
 		//header('Location: ../login.php');

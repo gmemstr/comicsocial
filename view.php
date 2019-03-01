@@ -12,7 +12,7 @@
     <div class="row">
         <?php
             echo "<h2>".$comic[0]['name']." <small>by ".$comic[0]['user_name']."</small></h2>";
-            echo "<img src='/comic.ly/".$comic[0]['location']."' class='img-responsive' alt='".$comic[0]['name']."'>";
+            echo "<img src='/".$comic[0]['location']."' class='img-responsive' alt='".$comic[0]['name']."'>";
             // debug print_r($comic);
         ?>
     </div>

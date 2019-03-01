@@ -38,11 +38,11 @@
 		for($i = 0; $i < sizeof($comics); $i++){
 		echo '<div class="col-md-3">
 			<div class="thumbnail">
-				<img src="/comic.ly/'.$comics[$i]['location'].'" alt="placeholder">
+				<img src="/'.$comics[$i]['location'].'" alt="placeholder">
 				<div class="caption">
 					<h3>'.$comics[$i]['name'].'</h3>
 					<p>'.$comics[$i]['description'].'</p>
-					<p><a href="/comic.ly/view/'.$comics[$i]['id'].'" class="btn btn-primary" role="button">Read</a></p>
+					<p><a href="/view/'.$comics[$i]['id'].'" class="btn btn-primary" role="button">Read</a></p>
 				</div>
 			</div>					
 		</div>';

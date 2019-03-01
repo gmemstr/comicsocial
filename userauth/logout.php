@@ -11,5 +11,5 @@
 	
 	User::current()->logout();
 	
-	header('Locatin /comic.ly/');
+	header('Locatin /');
 ?>

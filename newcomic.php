@@ -5,7 +5,7 @@
 <div class="container">
    <div class="row">
       <div class="col-md-6">
-         <form action="/comic.ly/comphp/submitcomic.php" method="post" enctype="multipart/form-data">
+         <form action="/comphp/submitcomic.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                <div class="form-group">
                   <label for="cfile">Comic File (.zip or .png)</label>
